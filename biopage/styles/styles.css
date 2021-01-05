@@ -1,0 +1,100 @@
+/* 759FBC
+
+0E1C36
+
+EFDCBE
+
+DFA5BF
+
+925E78
+
+
+font-family: 'Amatic SC', cursive;
+font-family: 'Raleway', sans-serif; */
+html {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Amatic SC", cursive;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 5%, 30%, 15%, 15%, 30%, 5%;
+  grid-template-rows: 5%, 100px, auto, 10%, 20px;
+  /* grid-template-areas: 
+      "header header header header header header"
+      ". picture picture intro1 intro1 ."
+      ". column1 column2 column2 column3 ."
+      ". finish finish finish picture ."
+      ". footer footer footer footer ."; */
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: center;
+  align-items: top;
+}
+
+header {
+  /* display: grid;
+  grid-column: 0 / span 2;
+  grid-row: 1/2; */
+  background-color: #0e1c36;
+  color: #efdcbe;
+  align-items: left;
+}
+.intro {
+  display: grid;
+  grid-row: 2;
+}
+
+.intro img {
+  display: grid;
+  grid-column: 3;
+}
+
+.intro p {
+  display: grid;
+  grid-column: 5/7;
+}
+
+.allColumns {
+  background-color: #759fbc;
+  margin: 10px;
+  display: grid;
+  grid-row: 3/4;
+  grid-column: span;
+}
+
+.wayBack,
+.facts,
+.hobbies {
+  display: grid;
+  grid-row: 3/4;
+  margin: 0, 5px, 0, 5px;
+}
+
+.wayBack {
+  grid-column: 2/3;
+}
+
+.facts {
+  grid-columns: 3/5;
+}
+
+.hobbies {
+  grid-columns: 5/6;
+}
+
+.ending {
+  grid-row: 5;
+  grid-column: 1/6;
+  background-color: #dfa5bf;
+}
+
+footer {
+  grid-row: 6;
+  grid-column: span;
+}
