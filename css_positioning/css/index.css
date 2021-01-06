@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  margin: auto;
+  max-width: 960px;
+}
+
+.secondary-page {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+section h2 {
+  display: block;
+  width: 100%;
+}
+
+.float {
+  display: inline-block;
+  width: 100%;
+}
+
+.float img {
+  float: left;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.flex p {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 600px;
+}
