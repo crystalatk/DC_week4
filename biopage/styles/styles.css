@@ -17,24 +17,31 @@ html {
   margin: 0;
 }
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
 h3 {
   font-family: "Amatic SC", cursive;
+  margin: 0px;
 }
 
 body {
-  display: grid;
+  margin: 0px;
+  /* display: grid;
   grid-template-columns: 5%, 30%, 15%, 15%, 30%, 5%;
-  grid-template-rows: 5%, 100px, auto, 10%, 20px;
+  grid-template-rows: 5%, 100px, auto, 10%, 20px; */
   /* grid-template-areas: 
       "header header header header header header"
       ". picture picture intro1 intro1 ."
       ". column1 column2 column2 column3 ."
       ". finish finish finish picture ."
       ". footer footer footer footer ."; */
-  column-gap: 10px;
-  row-gap: 15px;
+  /* column-gap: 10px;
+  row-gap: 15px; */
   justify-items: center;
-  align-items: top;
+  /* align-items: top; */
 }
 
 header {
@@ -44,10 +51,13 @@ header {
   background-color: #0e1c36;
   color: #efdcbe;
   align-items: left;
+  width: 100vw;
+  padding: 20px;
 }
 .intro {
   display: grid;
   grid-row: 2;
+  background-color: #f0e5d3;
 }
 
 .intro img {
@@ -58,43 +68,53 @@ header {
 .intro p {
   display: grid;
   grid-column: 5/7;
+  padding: 5px;
 }
 
 .allColumns {
   background-color: #759fbc;
-  margin: 10px;
+  padding: 10px;
+  /* margin: 10px; */
   display: grid;
   grid-row: 3/4;
   grid-column: span;
+  column-gap: 10px;
+  margin: 0px;
+  align-items: flex-start;
 }
 
 .wayBack,
 .facts,
 .hobbies {
   display: grid;
-  grid-row: 3/4;
-  margin: 0, 5px, 0, 5px;
+  grid-row: 1;
+
+  /* margin: 0, 5px, 0, 5px; */
 }
 
-.wayBack {
-  grid-column: 2/3;
+/* .wayBack {
+  grid-column: 1;
 }
 
 .facts {
-  grid-columns: 3/5;
+  grid-column: 2;
 }
 
 .hobbies {
-  grid-columns: 5/6;
-}
+  grid-column: 3;
+} */
 
 .ending {
-  grid-row: 5;
-  grid-column: 1/6;
+  display: block;
+  text-align: center;
   background-color: #dfa5bf;
+  padding: 10px;
+  width: 100vw;
+  margin: 0px;
 }
 
 footer {
-  grid-row: 6;
-  grid-column: span;
+  text-align: center;
+  background-color: #f0e5d3;
+  padding: 10px;
 }
