@@ -36,7 +36,7 @@ body {
   overflow: hidden;
 }
 
-.overlay.visable {
+.overlay.visible {
   display: flex;
 }
 
